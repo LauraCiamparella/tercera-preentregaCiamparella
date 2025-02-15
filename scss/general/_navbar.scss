@@ -1,0 +1,143 @@
+@import "../utilidades/variables";
+
+
+/*nav bar!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.navbar-toggler-icon {
+    background-image: url('../IMG/icon-hamburger.png');
+}
+
+.navbar-toggler {
+    border: none;
+     /* Elimina el borde del toggler */
+    &:focus {
+        outline: none;
+        box-shadow: none;
+    }
+    
+}
+
+.container-fluid {
+    a {
+        color: $text-color;
+        font-size: medium;
+    }
+}
+
+.btn {
+    background-color: $text-color;
+    color: $btn-text-color;
+    border: none;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-weight: 700;
+    border-radius: 10px;
+    text-align: center;
+/* Asegura que el texto se centre */
+    &:hover {
+        background-color: $hover-bg;
+        border: none;
+        color: $btn-text-color;
+        font-weight: 700;
+    }
+}
+
+.nav-link {
+    color: $text-color;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    
+    .active {
+        color: $secondary-color;
+    }
+
+    .disabled{
+        color: #554961;
+    }
+    &:hover{
+        color: $secondary-color;
+        transform: none;
+        /* Elimina cualquier cambio en el tamaño del contenedor */
+        font-size: inherit;
+        /* Mantén el tamaño de la fuente igual que el original */
+        font-weight: 600;
+    }
+}
+
+.container-fluid {
+    background-color: #3f324b;
+    padding-right: 180px;
+    padding-left: 180px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0;
+}
+
+.navbar-nav {
+    --bs-nav-link-font-weight: 600;
+    --bs-nav-link-color: $disabled-color;
+    --bs-nav-link-hover-color: $text-color;
+    --bs-nav-link-disabled-color: #5c5c5c;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+
+    .nav-link.disabled {
+        color: $disabled-color;
+    }
+    .nav-link.active {
+        color: $secondary-color;
+    }
+}
+
+.navbar {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    position: sticky;
+    top: 0;
+    /* Se queda pegada al top */
+    z-index: 9999;
+}
+
+.navbar-brand img {
+    max-height: 80px;
+    height: auto;
+    width: auto;
+    display: block;
+}
+
+.btn-outline-success {
+    --bs-btn-color: $text-color;
+    --bs-btn-border-color: $text-color;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: $text-color;
+    --bs-btn-hover-border-color: $text-color;
+    --bs-btn-focus-shadow-rgb: $text-color;
+    --bs-btn-active-color: #554961;
+    --bs-btn-active-bg: rgb(218, 217, 217);
+    --bs-btn-active-border-color: $text-color;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: $text-color;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color:$text-color;
+    --bs-gradient: $text-color;
+}
+
+.navbar-toggler-icon {
+    background-image: url('../IMG/icon-hamburger.png');
+}
+
+.navbar-toggler {
+    border: none;
+    &:focus {
+        outline: none;
+        box-shadow: none;
+    }
+}
+
+/*END nav bar!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/

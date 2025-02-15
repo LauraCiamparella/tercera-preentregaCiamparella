@@ -1,0 +1,23 @@
+
+@import "../utilidades/variables";
+
+/*estilos de footer*/
+
+footer {
+    background-color: $primary-color;
+    padding: 50px;
+    color: $text-color;
+    text-align: center;
+  
+    a {
+      color: $text-color;
+      font-weight: 700;
+  
+      &:hover {
+        color: $hover-bg;
+      }
+    }
+  }
+
+
+  /*END footer*/

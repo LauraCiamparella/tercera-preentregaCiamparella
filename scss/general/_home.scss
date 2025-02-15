@@ -1,0 +1,190 @@
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+
+
+/*estilos de main*/
+main {
+    @include flex;
+    flex-wrap: wrap;
+}
+
+main .textos {
+    text-align: center;
+    justify-content: right;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #4a4a4a;
+
+    h1 span {
+        display: block;
+        color: $primary-color;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .button {
+        background-color: $primary-color;
+        color: $text-color;
+        text-decoration: none;
+        padding: 10px 15px;
+        border-radius: 20px;
+        font-weight: 700;
+        display: inline-block;
+        /*convertir etiqueta de linea con propiedades de bloque*/
+        margin-top: 50px;
+        /*separo el boton de los demas textos*/
+        box-shadow: 0 4px 6px rgba(22, 22, 22, 0.5);
+        transition: box-shadow 0.3s ease;
+
+        &:hover {
+            box-shadow: 0 6px 12px rgba(22, 22, 22, 0.8);
+            opacity: 0.9;
+            cursor: pointer;
+        }
+    }
+}
+
+main .imagen {
+    @include flex;
+    width: 40%;
+    height: 40%;
+    max-width: 30vw;
+    /* Limita el ancho máximo */
+    aspect-ratio: 1 / 1;
+    background-image: url('../IMG/profile-picture.png');
+    /* Imagen inicial */
+    background-size: cover;
+    /* Ajustar la imagen al contenedor */
+    background-position: center;
+    /* Centrar la imagen */
+    transition: background-image 0.3s ease;
+    /* Transición suave */
+    &:hover {
+        background-image: url('../IMG/profile-picture-2.png');
+    }
+
+    img {
+        max-height: 60vh;
+    }
+}
+
+/*estilos de section*/
+
+/*estilos de section specializing-in*/
+.specializing-in {
+    background-color: $primary-color;
+    @include flex;
+    flex-direction: column;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 45px;
+    padding-bottom: 110px;
+}
+
+.card {
+    background-color: #fff7f1;
+    border-radius: 20px;
+    width: 20%;
+     /* Porcentaje del contenedor padre */
+    padding: 15px;
+    @include flex;
+    flex-direction: column;
+    /* Centrar el texto */
+    color: $primary-color;
+    box-shadow: 0 4px 6px rgba(22, 22, 22, 0.5);
+    transition: box-shadow 0.3s ease;
+
+    &:hover {
+        box-shadow: 0 6px 12px rgba(22, 22, 22, 0.8);
+        opacity: 0.9;
+        cursor: pointer;
+        transform: scale(1.05);
+    }
+
+    img {
+        width: 30%;
+        padding-bottom: 10px;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+        font-weight: 700;
+    }
+
+    a {
+        text-decoration: none;
+        color: $primary-color;
+        display: table-column;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+.specializing-in span h1 {
+    align-items: center;
+    color: #fff7f1;
+    font-size: 2em;
+    justify-content: right;
+    padding-top: 25px;
+    font-weight: 600;
+}
+
+/*estilos de section why-me*/
+.aptitudes span {
+    padding-bottom: 20px;
+    align-items: center;
+    color: $primary-color;
+    font-size: 1.5rem;
+    justify-content: right;
+    padding-top: 25px;
+}
+
+.aptitudes h1 {
+    font-weight: 700;
+}
+
+.aptitudes p {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #4a4a4a;
+}
+
+.why-me {
+    @include flex;
+}
+
+.aptitudes {
+    @include flex;
+    text-align: center;
+    font-size: larger;
+    flex-direction: column;
+    width: 40%;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.imagen2 {
+    @include flex;
+    width: 50%;
+    padding-left: 70px;
+
+    img {
+        max-height: 57vh;
+        padding-left: 60px;
+    }
+}
+
+.aptitudes ul {
+    padding-top: 20px;
+    text-align: center;
+    line-height: 2;
+    color: $primary-color;
+    font-size: x-large;
+    list-style: none;
+}
+
+/*END home*/

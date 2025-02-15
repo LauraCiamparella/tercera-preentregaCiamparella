@@ -1,0 +1,393 @@
+@import "../utilidades/mixin";
+
+/*media query mobile*/
+
+@media (max-width: 768px) {
+
+    .container-fluid {
+        padding-right: 20px;
+        padding-left: 20px;
+
+        .container-fluid {
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+    }
+
+    #navbarSupportedContent {
+        .collapse.navbar-collapse {
+            overflow: visible;
+        }
+    }
+
+    .navbar-collapse {
+        margin: 20px;
+        flex-basis: 100%;
+        flex-grow: 1;
+        align-items: center;
+    }
+
+    #navbarSupportedContent {
+        .btn {
+            width: 100%;
+        }
+    }
+
+    .grid-container {
+        grid-template-areas:
+            "item1"
+            "item2"
+            "item3"
+            "item4"
+            "item5";
+        grid-template-columns: 1fr;
+    }
+
+    .textos {
+        width: 80%;
+        height: auto;
+        padding-top: 20px;
+
+        h1 {
+            span {
+                padding-top: 10px;
+                font-size: x-large large;
+                padding-bottom: 10px;
+            }
+        }
+
+        p {
+            padding-bottom: 1px;
+            margin-bottom: 1px;
+        }
+
+        .button {
+            margin: 15px;
+            width: 50%;
+            height: auto;
+        }
+
+        .imagen {
+            transform: scale(1.8);
+            transition: transform 0.3s ease;
+            margin-bottom: 47px;
+            margin-top: 40px;
+            width: 70%;
+            height: auto;
+        }
+    }
+
+    .cards-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .aptitudes {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    .why-me {
+        display: flex;
+        align-items: center justify;
+        justify-content: justify;
+        flex-direction: column;
+
+        .imagen2 {
+            width: 90%;
+            padding: 0px;
+            background-size: contain;
+            background-position: center;
+
+            img {
+                width: 100%;
+                padding: 0px;
+                object-fit: contain;
+            }
+        }
+    }
+
+    .aptitudes {
+        ul {
+            line-height: 2;
+            font-size: large;
+            padding-bottom: 20px;
+        }
+    }
+
+    /*about me */
+
+    
+    .presentation-video {
+        display: flex;
+        justify-content: center;
+        padding: 0px;
+
+        .acomodar{
+            .info-about{
+                span {
+                    margin-bottom: 0;
+                    justify-content: center;
+                }
+        
+                p {
+                    padding: 0px 0px 0px 0px;
+                }
+            }
+        }
+        
+
+        h1 {
+            margin-bottom: 0;
+            font-size: xx-large;
+        }
+
+        .video {
+            margin: 0%;
+            width: 100%;
+            
+        
+            video {
+                width: 100%;
+                height: auto;
+            }
+        }
+    
+        .acomodar {
+            @include flex;
+            flex-direction: column;
+            margin: 0%;
+
+            .info-about {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                padding: 8px;
+            }
+        }
+    }
+
+    .careers {
+        flex-wrap: nowrap;
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .careers-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center justify;
+        padding: 8px;
+
+        h2 {
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        .careers-img {
+            justify-content: center;
+            margin: 0;
+            padding: 8px;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    .careers-container2 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center justify;
+        padding: 8px;
+
+        h2 {
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        .careers-img {
+            justify-content: center;
+            margin: 0;
+            padding: 8px;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .careers-img {
+            order: 1;
+        }
+
+        .careers-info {
+            order: 2;
+        }
+    }
+
+    /*portfolio */
+
+    .info-portfolio {
+        .spanportfolio {
+            h1 {
+                margin: 10px;
+                padding: 10px;
+                font-size: xx-large;
+            }
+        }
+
+        p {
+            width: 90%;
+            height: auto;
+            text-align: center;
+        }
+    }
+
+    .portfolio-info {
+        h1 {
+            margin: 10px;
+            padding: 10px;
+            font-size: xx-large;
+        }
+
+        p {
+            width: 90%;
+            height: auto;
+            text-align: center;
+            font-size: 16px;
+        }
+    }
+
+    .proyecto,
+    .proyecto2 {
+        width: 100%;
+        height: auto;
+        padding: 10px 10px 10px 10px;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    /*contacto */
+
+    .contact-container {
+        padding: 20px;
+    }
+
+    .contact-container h1 {
+        font-size: 2rem;
+    }
+
+    .contact-form {
+        padding: 30px;
+        @include flex;
+        flex-direction: column;
+
+        button {
+            font-size: 0.9rem;
+            margin-bottom: 40px;
+        }
+    }
+
+    .contact-section {
+        @include flex;
+        flex-direction: column;
+    }
+
+    .contact-section-container {
+        @include flex;
+        flex-direction: column;
+
+        h1 {
+            font-size: xx-large;
+            padding: 10px;
+        }
+    }
+
+    .contact-container .contact-section-container h1 {
+        font-size: xx-large;
+        padding: 10px;
+    }
+
+    /*shop */
+
+    main {
+        .product-grid {
+            
+                h1{
+                    font-size: xx-large;
+                }
+               padding-top: 0%;
+            
+            .container {
+                .row-cols-md-4 * {
+                    width: 100%;
+                }
+
+                .col-shop {
+                    
+                    .card-shop {
+                        width: 100%;
+                        max-width: 350px;
+                        margin: 0;
+
+                        img {
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                    }
+
+                    .card-body {
+                        width: 100%;
+                        @include flex;
+                        flex-direction: column;
+
+                        .card-title {
+                            width: 100%;
+                        }
+
+                        .card-text {
+                            width: 100%;
+                        }
+
+                        .price {
+                            width: 100%;
+                        }
+                    }
+                }
+
+
+            }
+        }
+    }
+}
+
+/*END media query mobile*/

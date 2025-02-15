@@ -1,0 +1,154 @@
+@import "../utilidades/mixin";
+@import "../utilidades/variables";
+
+/* Estilos para ABOUT */
+
+main {
+    flex-wrap: wrap;
+}
+
+.info-about {
+    line-height: 1.5;
+    padding-left: 60px;
+
+    h1,
+    .presentation-video span {
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: $primary-color;
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        text-align: center;
+        font-size: 1.2rem;
+        color: #4a4a4a;
+        margin-top: 0;
+        padding-bottom: 20px;
+    }
+}
+
+.presentation-video {
+    @include flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 55px 20px;
+    gap: 20px;
+
+    .video {
+        width: 80%;
+        max-height: 540px;
+        @include flex;
+        margin: 0 auto;
+
+        video {
+            border: 3px dashed $secondary-color;
+            border-radius: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+    }
+
+    p {
+        justify-content: right;
+        font-weight: 600;
+        font-size: 1.2rem;
+        color: #4a4a4a;
+    }
+}
+
+.careers {
+    @include flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.careers-container {
+    @include flex;
+    width: 100%;
+    height: auto;
+    padding-right: 60px;
+
+    .careers-img:hover {
+        transition: background-color 0.05s ease;
+        opacity: 1;
+        transform: scale(1.07);
+    }
+}
+
+.careers-container2 {
+    @include flex;
+    width: 100%;
+    padding-left: 220px;
+
+    .careers-img:hover {
+        transition: background-color 0.05s ease;
+        opacity: 1;
+        transform: scale(1.07);
+    }
+}
+
+
+
+.imguxui {
+    display: flex;
+    justify-content: left;
+    margin: 20px;
+}
+
+.careers-img {
+    display: flex;
+    justify-content: right;
+    margin: 20px;
+
+    img {
+        width: 60%;
+        height: auto;
+    }
+}
+
+.careers-info {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    justify-content: center;
+    line-height: 1.5;
+
+    a {
+        text-decoration: none;
+        color: $text-color;
+    }
+
+    .button {
+        background-color: $primary-color;
+        border: none;
+        border-radius: 12px;
+        padding: 5px 10px;
+        &:hover{
+            background-color: $hover-bg;
+            color: $btn-text-color;
+        }
+    } 
+
+    h2 {
+        font-size: xx-large;
+        font-weight: 700;
+        color: $primary-color;
+        margin-bottom: 20px;
+    }
+
+    p {
+        justify-content: right;
+        font-weight: 600;
+        font-size: 1.1rem;
+        color: #4a4a4a;
+        margin-bottom: 50px;
+    }
+}
+
+/*END about*/
